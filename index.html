@@ -11,6 +11,16 @@
     <link rel="stylesheet" href="./css/css2.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+       <script>
+        // 使用 JavaScript 打开 Streamlit 应用
+        function openStreamlitApp1() {
+            window.open('https://appapptest-hpdeffdgt78hudjflftsvd.streamlit.app/', '_blank'); // 在新标签页中打开
+            // 如果你想在同一标签页中打开，可以使用以下代码：
+            // window.location.href = 'http://localhost:8501';
+        }
+
+
+    </script>
 </head>
 <body>
 <nav class="main-nav">
@@ -21,7 +31,7 @@
         </a>
         <div class="nav-menu">
             <a href="#welcome" class="nav-item active" style="display: none"></a>
-            <a href="#chat" class="nav-item">心语星轻聊天</a>
+            <a href="javascript:void(0);" onclick="openStreamlitApp1();" class="nav-item active">心语星轻聊天</a>
             <a href="#assistant" class="nav-item">心语星小助手</a>
             <a href="#community" class="nav-item">心语星球</a>
         </div>
@@ -164,12 +174,46 @@
                         <path d="M8 0L6.6 1.4 12.2 7H0v2h12.2l-5.6 5.6L8 16l8-8z"/>
                     </svg>
                 </button>
+                 <script>
+                      // 定义响应函数f()
+                    function openStreamlitApp2() {
+                   window.open('https://hffsyy-noa7zhdbbg8rf9cyhaappr.streamlit.app/', '_blank'); // 在新标签页中打开
+            // 如果你想在同一标签页中打开，可以使用以下代码：
+            // window.location.href = 'http://localhost:8501';
+                     }
+                // 使用querySelector根据类名获取按钮元素
+                var button = document.querySelector('.card-btn.music-btn');
+
+                if (button) { // 确保按钮元素存在
+                // 添加点击事件监听器
+                    button.addEventListener('click', openStreamlitApp2);
+                } else {
+                 console.error("未找到指定的按钮元素");
+                    }
+                    </script>
             </div>
 
             <div class="card">
                 <h2>📖 励志文章</h2>
                 <p>相信困难是存在的，但只是暂时的</p>
                 <button class="card-btn article-btn">点击这里阅读励志文章</button>
+                <script>
+              // 定义响应函数
+              function openStreamlitApp3() {
+            var url = "https://hflzwz-cbahtiod8d6a9u7yirzn5y.streamlit.app/"; // 在新标签页中打开
+            window.open(url, '_blank'); // 修改为在新标签页打开
+        }
+
+        // 使用querySelector根据类名获取按钮元素
+        var button = document.querySelector('.card-btn.article-btn');
+
+        if (button) { // 确保按钮元素存在
+            // 添加点击事件监听器
+            button.addEventListener('click', openStreamlitApp3);
+        } else {
+            console.error("未找到指定的按钮元素");
+        }
+         </script>
             </div>
 
             <div class="card">
@@ -209,6 +253,24 @@
                 <h2>🌐 网页推荐</h2>
                 <p>为您精选有助于心情愉悦的网站</p>
                 <button class="card-btn Recommended-btn">查看推荐网页</button>
+                 <script>
+        // 定义响应函数
+        function openStreamlitApp4() {
+            window.open('https://hfwytj-xiyyp738geg6cjafynmdiq.streamlit.app/', '_blank'); // 在新标签页中打开
+            // 如果你想在同一标签页中打开，可以使用以下代码：
+            // window.location.href = 'http://localhost:8501';
+        }
+
+        // 使用querySelector根据类名获取按钮元素
+        var button = document.querySelector('.card-btn.Recommended-btn');
+
+        if (button) { // 确保按钮元素存在
+            // 添加点击事件监听器
+            button.addEventListener('click', openStreamlitApp4);
+        } else {
+            console.error("未找到指定的按钮元素");
+        }
+    </script>
             </div>
         </div>
     </div>
